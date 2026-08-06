@@ -1,10 +1,30 @@
 // =========================================================
 // BUDIDAYA GURAME — script.js
 // Cursor ripple, klik ripple, scroll reveal, water gauge,
-// nav scroll state, mobile menu, tabs olahan/jual
+// nav scroll state, mobile menu, tabs olahan/jual, bilingual
 // =========================================================
 
 document.addEventListener('DOMContentLoaded', () => {
+
+  /* ---------- 0. Lang Toggle Logic ---------- */
+  const langSwitch = document.getElementById('langSwitch');
+  if (langSwitch) {
+    langSwitch.addEventListener('click', () => {
+      const isEnglish = document.body.classList.contains('lang-en');
+      if (isEnglish) {
+        document.body.classList.remove('lang-en');
+        localStorage.setItem('pref-lang', 'id');
+      } else {
+        document.body.classList.add('lang-en');
+        localStorage.setItem('pref-lang', 'en');
+      }
+    });
+
+    // Cek preferensi user sebelumnya (default bahasa Indonesia)
+    if (localStorage.getItem('pref-lang') === 'en') {
+      document.body.classList.add('lang-en');
+    }
+  }
 
   /* ---------- 1. custom ripple cursor ---------- */
   const cursor = document.getElementById('rippleCursor');
@@ -33,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
       shown = false;
     });
 
-    const hoverTargets = 'a, button, [data-cursor], .gallery-card, .reason-card, .tl-card, .stat-card';
+    const hoverTargets = 'a, button, [data-cursor], .gallery-card, .reason-card, .tl-card, .stat-card, .contact-card';
     document.addEventListener('mouseover', (e) => {
       if (e.target.closest(hoverTargets)) cursor.classList.add('hovering');
     });
@@ -47,6 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- 2. click ripple burst (water splash) ---------- */
   document.addEventListener('click', (e) => {
+    // Jangan munculkan efek air di area toggle bahasa agar tidak mengganggu klik
+    if(e.target.closest('#langSwitch')) return; 
+
     const burst = document.createElement('span');
     burst.className = 'click-burst';
     burst.style.left = e.clientX + 'px';
