@@ -5,7 +5,7 @@
    dan pembatas antar section.
    ========================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('[https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap](https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap)');
 
 :root{
   --cream:      #F7F1E7;
@@ -50,6 +50,10 @@ body{
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
+
+/* --- BILINGUAL LOGIC --- */
+body:not(.lang-en) .en { display: none !important; }
+body.lang-en .id { display: none !important; }
 
 h1,h2,h3,h4{
   font-family: 'Fraunces', Georgia, serif;
@@ -226,8 +230,13 @@ section{ position: relative; }
   letter-spacing: -0.01em;
 }
 .nav__brand .brand-icon{ width:26px; height:26px; color: var(--terracotta); }
+.nav__menu-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 .nav__links{
-  display:flex; align-items:center; gap:30px;
+  display:flex; align-items:center; gap:24px;
 }
 .nav__links a{
   font-size: 14px;
@@ -245,6 +254,33 @@ section{ position: relative; }
 }
 .nav__links a:hover{ color: var(--ink); }
 .nav__links a:hover::after{ right:0; }
+
+/* Lang Toggle Switch */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  background: var(--cream-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px;
+  gap: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+}
+.lang-switch span {
+  padding: 4px 10px;
+  border-radius: 999px;
+  transition: 0.2s;
+  color: var(--ink-faint);
+}
+body:not(.lang-en) .lang-switch .sw-id,
+body.lang-en .lang-switch .sw-en {
+  background: var(--terracotta);
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
 .nav__toggle{
   display:none;
   width: 40px; height:40px;
@@ -261,7 +297,7 @@ section{ position: relative; }
 .nav__toggle span::before{ position:absolute; top:-5px; }
 .nav__toggle span::after{ position:absolute; top:5px; }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
   .nav__links{
     position: fixed;
     top: 62px; left: 16px; right:16px;
@@ -282,6 +318,7 @@ section{ position: relative; }
   .nav__links.open{ opacity:1; transform: scale(1); pointer-events:auto; }
   .nav__links a{ padding: 10px 8px; width:100%; }
   .nav__toggle{ display:flex; }
+  .nav__menu-wrap { gap: 12px; }
 }
 
 /* ---------- buttons ---------- */
@@ -742,6 +779,40 @@ section{ position: relative; }
 .g3{ background: linear-gradient(160deg,#F0DFC7,#E3B96E); }
 .g4{ background: linear-gradient(160deg,#E7D9C6,#CFA98A); }
 
+/* ---------- kontak (baru) ---------- */
+.contact-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+.contact-card{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 24px;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14.5px;
+  color: var(--ink);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s, color 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+.contact-card:hover{
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--terracotta);
+  color: var(--terracotta-dark);
+}
+.contact-card svg{
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+}
+
 /* ---------- footer / CTA ---------- */
 .footer{
   background: var(--ink);
@@ -790,6 +861,7 @@ section{ position: relative; }
 @media (max-width: 560px){
   .container{ padding: 0 20px; }
   .reason-grid{ grid-template-columns: 1fr; }
+  .contact-card{ grid-template-columns: 1fr; width:100%; justify-content:center; }
   .stat-grid{ grid-template-columns: 1fr 1fr; }
   .section-pad{ padding: 70px 0; }
   .hero{ padding: 130px 0 70px; }
