@@ -35,15 +35,40 @@
       </svg>
       Gurame&nbsp;Project
     </a>
-    <nav class="nav__links" id="navLinks">
-      <a href="#tentang-pkwu" data-cursor>Tentang PKWU</a>
-      <a href="#alasan" data-cursor>Alasan</a>
-      <a href="#cara-budidaya" data-cursor>Cara Budidaya</a>
-      <a href="#modal" data-cursor>Modal</a>
-      <a href="#panen" data-cursor>Hasil Panen</a>
-      <a href="#olahan" data-cursor>Olahan & Jual</a>
-    </nav>
-    <button class="nav__toggle" id="navToggle" aria-label="Buka menu"><span></span></button>
+    
+    <div class="nav__menu-wrap">
+      <nav class="nav__links" id="navLinks">
+        <a href="#tentang-pkwu" data-cursor>
+          <span class="id">Tentang PKWU</span><span class="en">About PKWU</span>
+        </a>
+        <a href="#alasan" data-cursor>
+          <span class="id">Alasan</span><span class="en">Reasons</span>
+        </a>
+        <a href="#cara-budidaya" data-cursor>
+          <span class="id">Cara Budidaya</span><span class="en">Cultivation</span>
+        </a>
+        <a href="#modal" data-cursor>
+          <span class="id">Modal</span><span class="en">Capital</span>
+        </a>
+        <a href="#panen" data-cursor>
+          <span class="id">Hasil Panen</span><span class="en">Harvest</span>
+        </a>
+        <a href="#olahan" data-cursor>
+          <span class="id">Olahan & Jual</span><span class="en">Process & Sell</span>
+        </a>
+        <a href="#kontak" data-cursor>
+          <span class="id">Kontak</span><span class="en">Contact</span>
+        </a>
+      </nav>
+      
+      <!-- Switch Bahasa -->
+      <div class="lang-switch" id="langSwitch" aria-label="Toggle Language" data-cursor>
+        <span class="sw-id">ID</span>
+        <span class="sw-en">EN</span>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Buka menu"><span></span></button>
+    </div>
   </div>
 </header>
 
@@ -51,12 +76,26 @@
 <section class="hero" id="beranda">
   <div class="container hero__inner">
     <div>
-      <span class="eyebrow"><span class="dot"></span> Project PKWU • Rekayasa Teknologi</span>
-      <h1>Merancang usaha dari <em>kolam</em>, membesarkan gurame jadi wirausaha.</h1>
-      <p class="lead">Website ini merangkum perjalanan project rekayasa teknologi kami: budidaya ikan gurame — mulai dari alasan memilih komoditas ini, tahapan budidaya, hitungan modal, hasil panen, sampai cara mengolah dan menjualnya.</p>
+      <span class="eyebrow">
+        <span class="dot"></span> 
+        <span class="id">Project PKWU • Rekayasa Teknologi</span>
+        <span class="en">PKWU Project • Tech Engineering</span>
+      </span>
+      <h1>
+        <span class="id">Merancang usaha dari <em>kolam</em>, membesarkan gurame jadi wirausaha.</span>
+        <span class="en">Designing business from the <em>pond</em>, raising gourami to become an entrepreneur.</span>
+      </h1>
+      <p class="lead">
+        <span class="id">Website ini merangkum perjalanan project rekayasa teknologi kami: budidaya ikan gurame — mulai dari alasan memilih komoditas ini, tahapan budidaya, hitungan modal, hasil panen, sampai cara mengolah dan menjualnya.</span>
+        <span class="en">This website summarizes our technology engineering project: gourami cultivation — from choosing the commodity, cultivation stages, capital calculation, harvest results, to processing and selling.</span>
+      </p>
       <div class="hero__ctas">
-        <a href="#cara-budidaya" class="btn btn-primary" data-cursor>Lihat Cara Budidaya</a>
-        <a href="#tentang-pkwu" class="btn btn-ghost" data-cursor>Apa itu PKWU?</a>
+        <a href="#cara-budidaya" class="btn btn-primary" data-cursor>
+          <span class="id">Lihat Cara Budidaya</span><span class="en">View Cultivation Methods</span>
+        </a>
+        <a href="#tentang-pkwu" class="btn btn-ghost" data-cursor>
+          <span class="id">Apa itu PKWU?</span><span class="en">What is PKWU?</span>
+        </a>
       </div>
     </div>
     <div class="hero__art">
@@ -72,8 +111,12 @@
         <circle cx="34" cy="38" r="5" fill="var(--cream)"/>
         <circle cx="35" cy="38" r="2.4" fill="var(--ink)"/>
       </svg>
-      <div class="hero__stat-chip chip-1"><b>5–7</b> Bulan masa panen</div>
-      <div class="hero__stat-chip chip-2"><b>Rp3,4jt</b> Estimasi modal awal</div>
+      <div class="hero__stat-chip chip-1">
+        <b>5–7</b> <span class="id">Bulan masa panen</span><span class="en">Months to harvest</span>
+      </div>
+      <div class="hero__stat-chip chip-2">
+        <b>Rp3,4jt</b> <span class="id">Estimasi modal awal</span><span class="en">Est. initial capital</span>
+      </div>
     </div>
   </div>
   <div class="scroll-cue"><span>Scroll</span><span class="scroll-cue__line"></span></div>
@@ -87,52 +130,79 @@
 <section class="section-pad bg-cream-soft" id="tentang-pkwu">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow"><span class="dot"></span>Tentang Mapel</span>
-      <h2>Apa itu PKWU, dan di mana posisi project ini?</h2>
-      <p>PKWU (Prakarya dan Kewirausahaan) mengajak siswa berpikir dan bertindak sebagai wirausahawan — mulai dari ide, produksi, sampai menjual hasil karya sendiri.</p>
+      <span class="eyebrow"><span class="dot"></span><span class="id">Tentang Mapel</span><span class="en">About Subject</span></span>
+      <h2>
+        <span class="id">Apa itu PKWU, dan di mana posisi project ini?</span>
+        <span class="en">What is PKWU, and where does this project stand?</span>
+      </h2>
+      <p>
+        <span class="id">PKWU (Prakarya dan Kewirausahaan) mengajak siswa berpikir dan bertindak sebagai wirausahawan — mulai dari ide, produksi, sampai menjual hasil karya sendiri.</span>
+        <span class="en">PKWU (Crafts and Entrepreneurship) encourages students to think and act like entrepreneurs — from ideas, production, to selling their own products.</span>
+      </p>
     </div>
 
     <div class="about-grid">
       <div class="about-list">
         <div class="about-card reveal">
-          <h3>Belajar dari mempraktikkan</h3>
-          <p>PKWU menekankan <em>learning by doing</em>: siswa tidak hanya memahami teori usaha, tetapi benar-benar merancang, memproduksi, menghitung modal, dan memasarkan produknya sendiri.</p>
+          <h3><span class="id">Belajar dari mempraktikkan</span><span class="en">Learning by doing</span></h3>
+          <p>
+            <span class="id">PKWU menekankan <em>learning by doing</em>: siswa tidak hanya memahami teori usaha, tetapi benar-benar merancang, memproduksi, menghitung modal, dan memasarkan produknya sendiri.</span>
+            <span class="en">PKWU emphasizes <em>learning by doing</em>: students don't just understand business theory, but actually design, produce, calculate capital, and market their own products.</span>
+          </p>
         </div>
         <div class="about-card reveal">
-          <h3>Empat bidang garapan</h3>
-          <p>Materi PKWU umumnya terbagi menjadi kerajinan, rekayasa, budidaya, dan pengolahan. Project ini menggabungkan dua bidang sekaligus: <b>rekayasa teknologi</b> dan <b>budidaya</b>.</p>
+          <h3><span class="id">Empat bidang garapan</span><span class="en">Four fields of work</span></h3>
+          <p>
+            <span class="id">Materi PKWU umumnya terbagi menjadi kerajinan, rekayasa, budidaya, dan pengolahan. Project ini menggabungkan dua bidang sekaligus: <b>rekayasa teknologi</b> dan <b>budidaya</b>.</span>
+            <span class="en">PKWU material is generally divided into crafts, engineering, cultivation, and processing. This project combines two fields at once: <b>technology engineering</b> and <b>cultivation</b>.</span>
+          </p>
         </div>
         <div class="about-card reveal">
-          <h3>Kenapa "rekayasa teknologi"?</h3>
-          <p>Sistem kolam terpal, sirkulasi air, pemberian pakan terjadwal, dan penerapan teknologi tepat guna dalam budidaya gurame termasuk penerapan rekayasa teknologi sederhana yang bisa dipraktikkan siswa.</p>
+          <h3><span class="id">Kenapa "rekayasa teknologi"?</span><span class="en">Why "technology engineering"?</span></h3>
+          <p>
+            <span class="id">Sistem kolam terpal, sirkulasi air, pemberian pakan terjadwal, dan penerapan teknologi tepat guna dalam budidaya gurame termasuk penerapan rekayasa teknologi sederhana yang bisa dipraktikkan siswa.</span>
+            <span class="en">Tarpaulin pond systems, water circulation, scheduled feeding, and the application of appropriate technology in gourami cultivation include the application of simple technology engineering that students can practice.</span>
+          </p>
         </div>
       </div>
 
       <div class="pkwu-diagram reveal">
-        <h3 style="margin-bottom:18px;font-size:17px;">Alur project kami</h3>
+        <h3 style="margin-bottom:18px;font-size:17px;"><span class="id">Alur project kami</span><span class="en">Our project flow</span></h3>
         <div class="pkwu-diagram__row active">
           <div class="pkwu-diagram__badge">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2v6m0 8v6M4.9 4.9l4.2 4.2m5.8 5.8 4.2 4.2M2 12h6m8 0h6M4.9 19.1l4.2-4.2m5.8-5.8 4.2-4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
-          <div class="pkwu-diagram__text"><b>Menentukan ide</b><span>Memilih gurame sebagai komoditas rekayasa</span></div>
+          <div class="pkwu-diagram__text">
+            <b><span class="id">Menentukan ide</span><span class="en">Determining ideas</span></b>
+            <span><span class="id">Memilih gurame sebagai komoditas rekayasa</span><span class="en">Choosing gourami as an engineering commodity</span></span>
+          </div>
         </div>
         <div class="pkwu-diagram__row">
           <div class="pkwu-diagram__badge">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
-          <div class="pkwu-diagram__text"><b>Merancang sistem</b><span>Kolam, pakan, dan jadwal perawatan</span></div>
+          <div class="pkwu-diagram__text">
+            <b><span class="id">Merancang sistem</span><span class="en">Designing the system</span></b>
+            <span><span class="id">Kolam, pakan, dan jadwal perawatan</span><span class="en">Ponds, feed, and maintenance schedules</span></span>
+          </div>
         </div>
         <div class="pkwu-diagram__row">
           <div class="pkwu-diagram__badge">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 20V10m8 10V4m8 16v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
-          <div class="pkwu-diagram__text"><b>Menghitung modal</b><span>Rincian biaya awal & proyeksi hasil</span></div>
+          <div class="pkwu-diagram__text">
+            <b><span class="id">Menghitung modal</span><span class="en">Calculating capital</span></b>
+            <span><span class="id">Rincian biaya awal & proyeksi hasil</span><span class="en">Initial cost details & yield projections</span></span>
+          </div>
         </div>
         <div class="pkwu-diagram__row">
           <div class="pkwu-diagram__badge">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18M7 15l4-5 3 3 5-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <div class="pkwu-diagram__text"><b>Panen & olah</b><span>Menjual segar atau produk siap makan</span></div>
+          <div class="pkwu-diagram__text">
+            <b><span class="id">Panen & olah</span><span class="en">Harvest & process</span></b>
+            <span><span class="id">Menjual segar atau produk siap makan</span><span class="en">Selling fresh or ready-to-eat products</span></span>
+          </div>
         </div>
       </div>
     </div>
@@ -147,30 +217,45 @@
 <section class="section-pad bg-pond-tint" id="alasan">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow pond"><span class="dot"></span>Alasan Memilih</span>
-      <h2>Kenapa ikan gurame?</h2>
-      <p>Dari sekian banyak komoditas budidaya, gurame kami pilih karena empat pertimbangan berikut.</p>
+      <span class="eyebrow pond"><span class="dot"></span><span class="id">Alasan Memilih</span><span class="en">Reasons to Choose</span></span>
+      <h2><span class="id">Kenapa ikan gurame?</span><span class="en">Why gourami?</span></h2>
+      <p>
+        <span class="id">Dari sekian banyak komoditas budidaya, gurame kami pilih karena empat pertimbangan berikut.</span>
+        <span class="en">Out of many cultivation commodities, we chose gourami due to these four considerations.</span>
+      </p>
     </div>
     <div class="reason-grid reveal-stagger">
       <div class="reason-card reveal" style="--i:0">
         <div class="reason-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 17c4-8 14-8 18 0M3 7c4 8 14 8 18 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-        <h3>Harga jual stabil</h3>
-        <p>Permintaan pasar konsisten sepanjang tahun dan harga jualnya relatif lebih tinggi dibanding ikan konsumsi air tawar lain seperti lele atau nila.</p>
+        <h3><span class="id">Harga jual stabil</span><span class="en">Stable selling price</span></h3>
+        <p>
+          <span class="id">Permintaan pasar konsisten sepanjang tahun dan harga jualnya relatif lebih tinggi dibanding ikan konsumsi air tawar lain seperti lele atau nila.</span>
+          <span class="en">Market demand is consistent throughout the year and its selling price is relatively higher compared to other freshwater fish like catfish or tilapia.</span>
+        </p>
       </div>
       <div class="reason-card reveal" style="--i:1">
         <div class="reason-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3>Tahan penyakit</h3>
-        <p>Gurame relatif kuat dan tidak mudah stres, sehingga cocok dipelihara pemula termasuk siswa yang baru pertama kali mencoba budidaya.</p>
+        <h3><span class="id">Tahan penyakit</span><span class="en">Disease resistant</span></h3>
+        <p>
+          <span class="id">Gurame relatif kuat dan tidak mudah stres, sehingga cocok dipelihara pemula termasuk siswa yang baru pertama kali mencoba budidaya.</span>
+          <span class="en">Gourami is relatively strong and not easily stressed, making it suitable for beginners including students trying cultivation for the first time.</span>
+        </p>
       </div>
       <div class="reason-card reveal" style="--i:2">
         <div class="reason-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="2"/><path d="M4 10h16" stroke="currentColor" stroke-width="2"/></svg></div>
-        <h3>Lahan terbatas cukup</h3>
-        <p>Bisa dibudidayakan di kolam terpal skala kecil di pekarangan rumah, tidak memerlukan lahan sawah atau tambak yang luas.</p>
+        <h3><span class="id">Lahan terbatas cukup</span><span class="en">Limited land is enough</span></h3>
+        <p>
+          <span class="id">Bisa dibudidayakan di kolam terpal skala kecil di pekarangan rumah, tidak memerlukan lahan sawah atau tambak yang luas.</span>
+          <span class="en">Can be cultivated in small-scale tarpaulin ponds in the backyard, not requiring large rice fields or ponds.</span>
+        </p>
       </div>
       <div class="reason-card reveal" style="--i:3">
         <div class="reason-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
-        <h3>Digemari & bergizi</h3>
-        <p>Daging gurame tebal, gurih, dan digemari sebagai menu andalan restoran — mulai dari gurame bakar sampai goreng, membuka peluang olahan bernilai jual tinggi.</p>
+        <h3><span class="id">Digemari & bergizi</span><span class="en">Popular & nutritious</span></h3>
+        <p>
+          <span class="id">Daging gurame tebal, gurih, dan digemari sebagai menu andalan restoran — mulai dari gurame bakar sampai goreng, membuka peluang olahan bernilai jual tinggi.</span>
+          <span class="en">Gourami meat is thick, savory, and popular as a restaurant mainstay — opening up opportunities for high-value processed products.</span>
+        </p>
       </div>
     </div>
   </div>
@@ -184,16 +269,25 @@
 <section class="section-pad" id="cara-budidaya">
   <div class="container">
     <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
-      <span class="eyebrow"><span class="dot"></span>Tahapan</span>
-      <h2>Cara budidaya, langkah demi langkah</h2>
-      <p>Urutan ini kami ikuti dari persiapan kolam sampai gurame siap dipanen.</p>
+      <span class="eyebrow"><span class="dot"></span><span class="id">Tahapan</span><span class="en">Stages</span></span>
+      <h2>
+        <span class="id">Cara budidaya, langkah demi langkah</span>
+        <span class="en">Cultivation methods, step by step</span>
+      </h2>
+      <p>
+        <span class="id">Urutan ini kami ikuti dari persiapan kolam sampai gurame siap dipanen.</span>
+        <span class="en">We follow this sequence from pond preparation until the gourami are ready to be harvested.</span>
+      </p>
     </div>
 
     <div class="timeline">
       <div class="tl-item reveal">
         <div class="tl-card">
-          <h3>1. Persiapan kolam</h3>
-          <p>Kolam terpal atau beton diisi air, diberi kapur pertanian dan pupuk kandang untuk menumbuhkan pakan alami, lalu dikeringkan 3–5 hari sebelum diisi air kembali.</p>
+          <h3><span class="id">1. Persiapan kolam</span><span class="en">1. Pond preparation</span></h3>
+          <p>
+            <span class="id">Kolam terpal atau beton diisi air, diberi kapur pertanian dan pupuk kandang untuk menumbuhkan pakan alami, lalu dikeringkan 3–5 hari sebelum diisi air kembali.</span>
+            <span class="en">Tarpaulin or concrete ponds are filled with water, given agricultural lime and manure to grow natural food, then dried for 3-5 days before refilling with water.</span>
+          </p>
         </div>
         <div class="tl-num">01</div>
         <div class="tl-spacer"></div>
@@ -202,14 +296,20 @@
         <div class="tl-spacer"></div>
         <div class="tl-num">02</div>
         <div class="tl-card">
-          <h3>2. Pemilihan & penebaran benih</h3>
-          <p>Benih dipilih yang sehat dan seragam (ukuran ±5–8 cm), diaklimatisasi dulu (disesuaikan suhu) sebelum ditebar dengan kepadatan sekitar 10–15 ekor per m².</p>
+          <h3><span class="id">2. Pemilihan & penebaran benih</span><span class="en">2. Seed selection & stocking</span></h3>
+          <p>
+            <span class="id">Benih dipilih yang sehat dan seragam (ukuran ±5–8 cm), diaklimatisasi dulu (disesuaikan suhu) sebelum ditebar dengan kepadatan sekitar 10–15 ekor per m².</span>
+            <span class="en">Select healthy and uniform seeds (size ±5-8 cm), acclimatize first (adjust temperature) before stocking with a density of around 10-15 pieces per m².</span>
+          </p>
         </div>
       </div>
       <div class="tl-item reveal">
         <div class="tl-card">
-          <h3>3. Pemberian pakan</h3>
-          <p>Pelet apung berprotein 25–30% diberikan 2–3 kali sehari, ditambah pakan alami seperti daun sente atau talas untuk menekan biaya pakan.</p>
+          <h3><span class="id">3. Pemberian pakan</span><span class="en">3. Feeding</span></h3>
+          <p>
+            <span class="id">Pelet apung berprotein 25–30% diberikan 2–3 kali sehari, ditambah pakan alami seperti daun sente atau talas untuk menekan biaya pakan.</span>
+            <span class="en">Floating pellets with 25-30% protein are given 2-3 times a day, plus natural feed like sente or taro leaves to reduce feed costs.</span>
+          </p>
         </div>
         <div class="tl-num">03</div>
         <div class="tl-spacer"></div>
@@ -218,14 +318,20 @@
         <div class="tl-spacer"></div>
         <div class="tl-num">04</div>
         <div class="tl-card">
-          <h3>4. Perawatan & kualitas air</h3>
-          <p>Pengecekan rutin pH, suhu, dan kejernihan air, pergantian sebagian air kolam secara berkala, serta penyortiran ikan berdasarkan ukuran agar pertumbuhan merata.</p>
+          <h3><span class="id">4. Perawatan & kualitas air</span><span class="en">4. Care & water quality</span></h3>
+          <p>
+            <span class="id">Pengecekan rutin pH, suhu, dan kejernihan air, pergantian sebagian air kolam secara berkala, serta penyortiran ikan berdasarkan ukuran agar pertumbuhan merata.</span>
+            <span class="en">Routine checks of pH, temperature, and water clarity, partial pond water changes periodically, and sorting fish by size so growth is even.</span>
+          </p>
         </div>
       </div>
       <div class="tl-item reveal">
         <div class="tl-card">
-          <h3>5. Pengendalian hama & penyakit</h3>
-          <p>Menjaga kebersihan kolam, mengarantina ikan baru, dan memantau tanda-tanda penyakit sejak dini agar tidak menular ke seluruh kolam.</p>
+          <h3><span class="id">5. Pengendalian hama & penyakit</span><span class="en">5. Pest & disease control</span></h3>
+          <p>
+            <span class="id">Menjaga kebersihan kolam, mengarantina ikan baru, dan memantau tanda-tanda penyakit sejak dini agar tidak menular ke seluruh kolam.</span>
+            <span class="en">Maintaining pond cleanliness, quarantining new fish, and monitoring early signs of disease so it doesn't spread throughout the pond.</span>
+          </p>
         </div>
         <div class="tl-num">05</div>
         <div class="tl-spacer"></div>
@@ -234,8 +340,11 @@
         <div class="tl-spacer"></div>
         <div class="tl-num">06</div>
         <div class="tl-card">
-          <h3>6. Panen</h3>
-          <p>Setelah 5–7 bulan (tergantung ukuran benih awal), gurame yang sudah mencapai bobot konsumsi 500 g–1 kg siap dipanen menggunakan jaring.</p>
+          <h3><span class="id">6. Panen</span><span class="en">6. Harvest</span></h3>
+          <p>
+            <span class="id">Setelah 5–7 bulan (tergantung ukuran benih awal), gurame yang sudah mencapai bobot konsumsi 500 g–1 kg siap dipanen menggunakan jaring.</span>
+            <span class="en">After 5-7 months (depending on initial seed size), gourami that have reached a consumption weight of 500g-1kg are ready to be harvested using nets.</span>
+          </p>
         </div>
       </div>
     </div>
@@ -250,35 +359,80 @@
 <section class="section-pad bg-cream-soft" id="modal">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow"><span class="dot"></span>Perhitungan</span>
-      <h2>Modal awal (contoh skala kolam 3×4 m)</h2>
-      <p>Rincian di bawah adalah contoh perhitungan untuk kebutuhan project pembelajaran skala kecil, bisa disesuaikan dengan kondisi masing-masing kelompok.</p>
+      <span class="eyebrow"><span class="dot"></span><span class="id">Perhitungan</span><span class="en">Calculation</span></span>
+      <h2>
+        <span class="id">Modal awal (contoh skala kolam 3×4 m)</span>
+        <span class="en">Initial capital (example of 3x4 m pond scale)</span>
+      </h2>
+      <p>
+        <span class="id">Rincian di bawah adalah contoh perhitungan untuk kebutuhan project pembelajaran skala kecil, bisa disesuaikan dengan kondisi masing-masing kelompok.</span>
+        <span class="en">The details below are an example of calculations for small school project needs, can be adjusted to the conditions of each group.</span>
+      </p>
     </div>
     <div class="modal-wrap">
       <div class="reveal">
         <table class="cost-table">
           <thead>
-            <tr><th>Kebutuhan</th><th class="num">Estimasi Biaya</th></tr>
+            <tr>
+              <th><span class="id">Kebutuhan</span><span class="en">Needs</span></th>
+              <th class="num"><span class="id">Estimasi Biaya</span><span class="en">Est. Cost</span></th>
+            </tr>
           </thead>
           <tbody>
-            <tr><td>Kolam terpal + rangka bambu/besi</td><td class="num">Rp 800.000</td></tr>
-            <tr><td>Benih gurame (±200 ekor @ Rp3.000)</td><td class="num">Rp 600.000</td></tr>
-            <tr><td>Pakan pelet selama pemeliharaan</td><td class="num">Rp 1.500.000</td></tr>
-            <tr><td>Kapur, pupuk & vitamin ikan</td><td class="num">Rp 200.000</td></tr>
-            <tr><td>Peralatan (aerator, jaring, ember)</td><td class="num">Rp 300.000</td></tr>
-            <tr class="total"><td>Total modal awal</td><td class="num">Rp 3.400.000</td></tr>
+            <tr>
+              <td><span class="id">Kolam terpal + rangka bambu/besi</span><span class="en">Tarpaulin pond + bamboo/iron frame</span></td>
+              <td class="num">Rp 800.000</td>
+            </tr>
+            <tr>
+              <td><span class="id">Benih gurame (±200 ekor @ Rp3.000)</span><span class="en">Gourami seeds (±200 pcs @ Rp3,000)</span></td>
+              <td class="num">Rp 600.000</td>
+            </tr>
+            <tr>
+              <td><span class="id">Pakan pelet selama pemeliharaan</span><span class="en">Pellet feed during maintenance</span></td>
+              <td class="num">Rp 1.500.000</td>
+            </tr>
+            <tr>
+              <td><span class="id">Kapur, pupuk & vitamin ikan</span><span class="en">Lime, fertilizer & fish vitamins</span></td>
+              <td class="num">Rp 200.000</td>
+            </tr>
+            <tr>
+              <td><span class="id">Peralatan (aerator, jaring, ember)</span><span class="en">Equipment (aerator, net, bucket)</span></td>
+              <td class="num">Rp 300.000</td>
+            </tr>
+            <tr class="total">
+              <td><span class="id">Total modal awal</span><span class="en">Total initial capital</span></td>
+              <td class="num">Rp 3.400.000</td>
+            </tr>
           </tbody>
         </table>
-        <p class="modal-note">*Angka bersifat estimasi dan dapat berubah menyesuaikan harga pasar serta lokasi masing-masing.</p>
+        <p class="modal-note">
+          <span class="id">*Angka bersifat estimasi dan dapat berubah menyesuaikan harga pasar serta lokasi masing-masing.</span>
+          <span class="en">*Figures are estimated and subject to change according to market prices and respective locations.</span>
+        </p>
       </div>
       <div class="modal-side reveal">
-        <h3>Tips menekan modal</h3>
-        <p>Beberapa cara yang kami terapkan agar modal awal tetap terjangkau untuk skala project sekolah.</p>
+        <h3><span class="id">Tips menekan modal</span><span class="en">Tips to reduce capital</span></h3>
+        <p>
+          <span class="id">Beberapa cara yang kami terapkan agar modal awal tetap terjangkau untuk skala project sekolah.</span>
+          <span class="en">A few ways we applied so the initial capital remains affordable for school project scales.</span>
+        </p>
         <ul>
-          <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Gunakan kolam terpal, lebih murah dibanding kolam beton permanen.</li>
-          <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Kombinasikan pelet dengan pakan alami (daun sente/talas) untuk memangkas biaya pakan.</li>
-          <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Beli benih dalam kelompok/patungan untuk mendapat harga lebih murah.</li>
-          <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Pinjam peralatan yang jarang dipakai dari sekolah atau warga sekitar.</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> 
+            <span class="id">Gunakan kolam terpal, lebih murah dibanding kolam beton permanen.</span>
+            <span class="en">Use tarpaulin ponds, much cheaper than permanent concrete ponds.</span>
+          </li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> 
+            <span class="id">Kombinasikan pelet dengan pakan alami (daun sente/talas) untuk memangkas biaya pakan.</span>
+            <span class="en">Combine pellets with natural feed (sente/taro leaves) to cut feed costs.</span>
+          </li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> 
+            <span class="id">Beli benih dalam kelompok/patungan untuk mendapat harga lebih murah.</span>
+            <span class="en">Buy seeds in groups/jointly to get cheaper prices.</span>
+          </li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> 
+            <span class="id">Pinjam peralatan yang jarang dipakai dari sekolah atau warga sekitar.</span>
+            <span class="en">Borrow rarely used equipment from school or local residents.</span>
+          </li>
         </ul>
       </div>
     </div>
@@ -293,17 +447,37 @@
 <section class="section-pad bg-pond-tint" id="panen">
   <div class="container">
     <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
-      <span class="eyebrow pond"><span class="dot"></span>Proyeksi</span>
-      <h2>Estimasi hasil panen</h2>
-      <p>Perkiraan hasil dari 200 ekor benih dengan tingkat kelangsungan hidup (survival rate) 80%.</p>
+      <span class="eyebrow pond"><span class="dot"></span><span class="id">Proyeksi</span><span class="en">Projection</span></span>
+      <h2>
+        <span class="id">Estimasi hasil panen</span><span class="en">Estimated harvest yield</span>
+      </h2>
+      <p>
+        <span class="id">Perkiraan hasil dari 200 ekor benih dengan tingkat kelangsungan hidup (survival rate) 80%.</span>
+        <span class="en">Estimated yield from 200 seeds with an 80% survival rate.</span>
+      </p>
     </div>
     <div class="stat-grid reveal-stagger">
-      <div class="stat-card reveal" style="--i:0"><b>160 ekor</b><span>Jumlah panen (SR 80%)</span></div>
-      <div class="stat-card reveal" style="--i:1"><b>±600 g</b><span>Bobot rata-rata / ekor</span></div>
-      <div class="stat-card reveal" style="--i:2"><b>±96 kg</b><span>Total bobot panen</span></div>
-      <div class="stat-card reveal" style="--i:3"><b>Rp3,3jt</b><span>Estimasi omzet (@Rp35rb/kg)</span></div>
+      <div class="stat-card reveal" style="--i:0">
+        <b>160 <span class="id">ekor</span><span class="en">pcs</span></b>
+        <span><span class="id">Jumlah panen (SR 80%)</span><span class="en">Harvest amount (SR 80%)</span></span>
+      </div>
+      <div class="stat-card reveal" style="--i:1">
+        <b>±600 g</b>
+        <span><span class="id">Bobot rata-rata / ekor</span><span class="en">Average weight / pc</span></span>
+      </div>
+      <div class="stat-card reveal" style="--i:2">
+        <b>±96 kg</b>
+        <span><span class="id">Total bobot panen</span><span class="en">Total harvest weight</span></span>
+      </div>
+      <div class="stat-card reveal" style="--i:3">
+        <b>Rp3,3jt</b>
+        <span><span class="id">Estimasi omzet (@Rp35rb/kg)</span><span class="en">Est. revenue (@Rp35k/kg)</span></span>
+      </div>
     </div>
-    <p class="reveal" style="max-width:640px;margin:26px auto 0;text-align:center;font-size:14.5px;">Omzet di atas belum termasuk nilai tambah jika ikan diolah menjadi gurame bakar/goreng, yang harga jualnya per porsi bisa jauh lebih tinggi daripada dijual sebagai ikan segar.</p>
+    <p class="reveal" style="max-width:640px;margin:26px auto 0;text-align:center;font-size:14.5px;">
+      <span class="id">Omzet di atas belum termasuk nilai tambah jika ikan diolah menjadi gurame bakar/goreng, yang harga jualnya per porsi bisa jauh lebih tinggi daripada dijual sebagai ikan segar.</span>
+      <span class="en">The revenue above does not include added value if the fish is processed into grilled/fried gourami, where the selling price per portion can be much higher than sold fresh.</span>
+    </p>
   </div>
 </section>
 
@@ -315,36 +489,70 @@
 <section class="section-pad" id="olahan">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow"><span class="dot"></span>Hilirisasi</span>
-      <h2>Diolah jadi apa, dijual ke mana?</h2>
-      <p>Gurame hasil panen bisa dijual segar maupun diolah dulu menjadi produk siap makan. Berikut dua sisi yang kami rancang: cara mengolah dan cara menjualnya.</p>
+      <span class="eyebrow"><span class="dot"></span><span class="id">Hilirisasi</span><span class="en">Downstreaming</span></span>
+      <h2>
+        <span class="id">Diolah jadi apa, dijual ke mana?</span>
+        <span class="en">Processed into what, sold where?</span>
+      </h2>
+      <p>
+        <span class="id">Gurame hasil panen bisa dijual segar maupun diolah dulu menjadi produk siap makan. Berikut dua sisi yang kami rancang: cara mengolah dan cara menjualnya.</span>
+        <span class="en">Harvested gourami can be sold fresh or processed into ready-to-eat products. Here are the two sides we designed: how to process and how to sell.</span>
+      </p>
     </div>
 
     <div class="tabs" role="tablist">
-      <button class="tab-btn active" data-tab="olah" data-cursor>Cara Mengolah</button>
-      <button class="tab-btn" data-tab="jual" data-cursor>Cara Menjual</button>
+      <button class="tab-btn active" data-tab="olah" data-cursor>
+        <span class="id">Cara Mengolah</span><span class="en">How to Process</span>
+      </button>
+      <button class="tab-btn" data-tab="jual" data-cursor>
+        <span class="id">Cara Menjual</span><span class="en">How to Sell</span>
+      </button>
     </div>
 
     <div class="tab-panels">
       <div class="tab-panel active" id="panel-olah">
         <div class="olah-card">
           <div class="olah-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 2c0 2-2 2-2 4s2 2 2 4M14 2c0 2-2 2-2 4s2 2 2 4M8 18h8M6 22h12M9 14h6l1 4H8l1-4Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <h3>Gurame Bakar</h3>
-          <p>Ikan dibersihkan lalu dibelah, dilumuri bumbu kecap, bawang, dan rempah, kemudian dibakar di atas bara sambil sesekali diolesi bumbu agar meresap dan tidak kering.</p>
+          <h3><span class="id">Gurame Bakar</span><span class="en">Grilled Gourami</span></h3>
+          <p>
+            <span class="id">Ikan dibersihkan lalu dibelah, dilumuri bumbu kecap, bawang, dan rempah, kemudian dibakar di atas bara sambil sesekali diolesi bumbu agar meresap dan tidak kering.</span>
+            <span class="en">The fish is cleaned then split open, coated with soy sauce, onions, and spices, then grilled over coals while occasionally brushing with spices so it absorbs and doesn't dry out.</span>
+          </p>
           <ul>
-            <li>Cocok disajikan dengan sambal terasi dan lalapan</li>
-            <li>Aroma bakar jadi nilai jual utama menu restoran</li>
-            <li>Bisa dikemas dalam paket makan siap saji</li>
+            <li>
+              <span class="id">Cocok disajikan dengan sambal terasi dan lalapan</span>
+              <span class="en">Perfect served with chili paste and fresh vegetables</span>
+            </li>
+            <li>
+              <span class="id">Aroma bakar jadi nilai jual utama menu restoran</span>
+              <span class="en">The grilled aroma is the main selling point for restaurant menus</span>
+            </li>
+            <li>
+              <span class="id">Bisa dikemas dalam paket makan siap saji</span>
+              <span class="en">Can be packaged in ready-to-eat meal boxes</span>
+            </li>
           </ul>
         </div>
         <div class="olah-card">
           <div class="olah-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="14" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M6 8c1-2 3-4 6-4M4 22h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-          <h3>Gurame Goreng</h3>
-          <p>Ikan diberi bumbu kuning (kunyit, bawang, ketumbar), didiamkan agar meresap, lalu digoreng dalam minyak panas hingga kulitnya garing dan dagingnya tetap juicy.</p>
+          <h3><span class="id">Gurame Goreng</span><span class="en">Fried Gourami</span></h3>
+          <p>
+            <span class="id">Ikan diberi bumbu kuning (kunyit, bawang, ketumbar), didiamkan agar meresap, lalu digoreng dalam minyak panas hingga kulitnya garing dan dagingnya tetap juicy.</span>
+            <span class="en">The fish is seasoned with yellow spices (turmeric, onion, coriander), left to absorb, then fried in hot oil until the skin is crispy and the meat remains juicy.</span>
+          </p>
           <ul>
-            <li>Tekstur garing di luar, lembut di dalam</li>
-            <li>Favorit untuk menu rumahan maupun warung makan</li>
-            <li>Cocok dijual satuan per porsi atau per ekor</li>
+            <li>
+              <span class="id">Tekstur garing di luar, lembut di dalam</span>
+              <span class="en">Crispy texture outside, soft inside</span>
+            </li>
+            <li>
+              <span class="id">Favorit untuk menu rumahan maupun warung makan</span>
+              <span class="en">Favorite for home menus and local food stalls</span>
+            </li>
+            <li>
+              <span class="id">Cocok dijual satuan per porsi atau per ekor</span>
+              <span class="en">Suitable to be sold individually per portion or per fish</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -352,22 +560,46 @@
       <div class="tab-panel" id="panel-jual">
         <div class="olah-card">
           <div class="olah-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 7h18l-1.5 11a2 2 0 0 1-2 1.7H6.5a2 2 0 0 1-2-1.7L3 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 7V5a4 4 0 0 1 8 0v2" stroke="currentColor" stroke-width="1.8"/></svg></div>
-          <h3>Marketplace & media sosial</h3>
-          <p>Ikan segar maupun olahan matang dipasarkan lewat marketplace (Shopee, Tokopedia) dan media sosial (WhatsApp Business, Instagram, TikTok Shop) dengan foto produk yang menarik.</p>
+          <h3><span class="id">Marketplace & media sosial</span><span class="en">Marketplace & social media</span></h3>
+          <p>
+            <span class="id">Ikan segar maupun olahan matang dipasarkan lewat marketplace (Shopee, Tokopedia) dan media sosial (WhatsApp Business, Instagram, TikTok Shop) dengan foto produk yang menarik.</span>
+            <span class="en">Fresh fish and cooked products are marketed via marketplaces (Shopee, Tokopedia) and social media (WhatsApp, Instagram, TikTok) with attractive product photos.</span>
+          </p>
           <ul>
-            <li>Jangkauan pembeli lebih luas, tidak terbatas lokasi</li>
-            <li>Konten proses budidaya jadi nilai promosi tersendiri</li>
-            <li>Bisa sistem pre-order untuk olahan siap makan</li>
+            <li>
+              <span class="id">Jangkauan pembeli lebih luas, tidak terbatas lokasi</span>
+              <span class="en">Wider buyer reach, not limited by location</span>
+            </li>
+            <li>
+              <span class="id">Konten proses budidaya jadi nilai promosi tersendiri</span>
+              <span class="en">Cultivation process content becomes its own promotional value</span>
+            </li>
+            <li>
+              <span class="id">Bisa sistem pre-order untuk olahan siap makan</span>
+              <span class="en">Can use pre-order systems for ready-to-eat dishes</span>
+            </li>
           </ul>
         </div>
         <div class="olah-card">
           <div class="olah-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 3v18M4 3h11l-2 4 2 4H4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
-          <h3>Kemitraan dengan restoran</h3>
-          <p>Menjalin kerja sama sebagai pemasok tetap ke restoran atau rumah makan yang membutuhkan pasokan gurame segar secara berkala, dengan harga yang disepakati di awal.</p>
+          <h3><span class="id">Kemitraan dengan restoran</span><span class="en">Partnership with restaurants</span></h3>
+          <p>
+            <span class="id">Menjalin kerja sama sebagai pemasok tetap ke restoran atau rumah makan yang membutuhkan pasokan gurame segar secara berkala, dengan harga yang disepakati di awal.</span>
+            <span class="en">Establishing cooperation as a regular supplier to restaurants that need fresh gourami supplies periodically, with a pre-agreed price.</span>
+          </p>
           <ul>
-            <li>Permintaan lebih stabil karena kontrak berkala</li>
-            <li>Cocok untuk ikan segar ukuran konsumsi seragam</li>
-            <li>Membuka peluang kerja sama jangka panjang</li>
+            <li>
+              <span class="id">Permintaan lebih stabil karena kontrak berkala</span>
+              <span class="en">More stable demand due to periodic contracts</span>
+            </li>
+            <li>
+              <span class="id">Cocok untuk ikan segar ukuran konsumsi seragam</span>
+              <span class="en">Suitable for uniform-sized fresh consumption fish</span>
+            </li>
+            <li>
+              <span class="id">Membuka peluang kerja sama jangka panjang</span>
+              <span class="en">Opens up long-term collaboration opportunities</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -383,35 +615,105 @@
 <section class="section-pad bg-cream-soft" id="galeri">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow"><span class="dot"></span>Galeri</span>
-      <h2>Gambaran project kami</h2>
-      <p>Ilustrasi sederhana dari tiap tahap project — silakan ganti dengan foto dokumentasi asli kelompok kamu.</p>
+      <span class="eyebrow"><span class="dot"></span><span class="id">Galeri</span><span class="en">Gallery</span></span>
+      <h2>
+        <span class="id">Gambaran project kami</span>
+        <span class="en">Overview of our project</span>
+      </h2>
+      <p>
+        <span class="id">Ilustrasi sederhana dari tiap tahap project — silakan ganti dengan foto dokumentasi asli kelompok kamu.</span>
+        <span class="en">Simple illustrations of each project stage — feel free to replace with your group's actual documentation photos.</span>
+      </p>
     </div>
     <div class="gallery-grid">
       <div class="gallery-card reveal">
         <div class="gallery-card__art g1">
           <svg width="70" height="70" viewBox="0 0 24 24" fill="none"><rect x="3" y="9" width="18" height="9" rx="1.5" stroke="var(--pond-dark)" stroke-width="1.6"/><path d="M3 9c3-3 15-3 18 0" stroke="var(--pond-dark)" stroke-width="1.6"/></svg>
         </div>
-        <div class="gallery-card__label">Kolam terpal</div>
+        <div class="gallery-card__label">
+          <span class="id">Kolam terpal</span><span class="en">Tarpaulin pond</span>
+        </div>
       </div>
       <div class="gallery-card reveal">
         <div class="gallery-card__art g2">
           <svg width="76" height="76" viewBox="0 0 160 90" fill="none"><path d="M8 45c18-32 96-32 114 0-18 32-96 32-114 0Z" fill="var(--terracotta-dark)"/><path d="M110 45 152 14v62L110 45Z" fill="var(--terracotta-dark)"/></svg>
         </div>
-        <div class="gallery-card__label">Benih gurame</div>
+        <div class="gallery-card__label">
+          <span class="id">Benih gurame</span><span class="en">Gourami seed</span>
+        </div>
       </div>
       <div class="gallery-card reveal">
         <div class="gallery-card__art g3">
           <svg width="70" height="70" viewBox="0 0 24 24" fill="none"><path d="M6 12h12l-2 8H8l-2-8Z" stroke="#8A4A1E" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 12c0-4 2-7 6-7s6 3 6 7" stroke="#8A4A1E" stroke-width="1.6"/></svg>
         </div>
-        <div class="gallery-card__label">Gurame bakar</div>
+        <div class="gallery-card__label">
+          <span class="id">Gurame bakar</span><span class="en">Grilled gourami</span>
+        </div>
       </div>
       <div class="gallery-card reveal">
         <div class="gallery-card__art g4">
           <svg width="70" height="70" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="13" r="8" stroke="#7A5326" stroke-width="1.6"/><path d="M6 7c1.5-2 3-3.4 6-3.4" stroke="#7A5326" stroke-width="1.6" stroke-linecap="round"/></svg>
         </div>
-        <div class="gallery-card__label">Gurame goreng</div>
+        <div class="gallery-card__label">
+          <span class="id">Gurame goreng</span><span class="en">Fried gourami</span>
+        </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section class="section-pad bg-pond-tint" id="kontak">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow pond"><span class="dot"></span><span class="id">Hubungi Kami</span><span class="en">Contact Us</span></span>
+      <h2>
+        <span class="id">Mari Terhubung</span>
+        <span class="en">Let's Connect</span>
+      </h2>
+      <p>
+        <span class="id">Punya pertanyaan tentang project ini atau ingin berkolaborasi? Jangan ragu untuk menghubungi melalui platform di bawah ini.</span>
+        <span class="en">Have questions about this project or want to collaborate? Feel free to reach out through the platforms below.</span>
+      </p>
+    </div>
+    
+    <div class="contact-grid reveal">
+      <!-- Instagram -->
+      <a href="https://instagram.com/bayualfatir-gjwyu-2658163-oehh-co" target="_blank" class="contact-card" data-cursor>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        <span>bayualfatir</span>
+      </a>
+      
+      <!-- GitHub -->
+      <a href="https://github.com/bayualfatir-gjwyu-2658163-oehh-co" target="_blank" class="contact-card" data-cursor>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+        </svg>
+        <span>bayualfatir</span>
+      </a>
+      
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/bayualfatir-gjwyu-2658163-oehh-co" target="_blank" class="contact-card" data-cursor>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+        <span>bayualfatir</span>
+      </a>
+      
+      <!-- Email -->
+      <a href="mailto:bayualfatir@gmail.com" class="contact-card" data-cursor>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        <span>bayualfatir@gmail.com</span>
+      </a>
     </div>
   </div>
 </section>
@@ -421,18 +723,32 @@
   <div class="container">
     <div class="footer__top reveal">
       <div>
-        <span class="eyebrow" style="background:rgba(247,241,231,0.1);border-color:rgba(247,241,231,0.2);color:var(--terracotta-light)"><span class="dot" style="background:var(--terracotta-light)"></span>Penutup</span>
-        <h2>Dari kolam kecil, belajar berwirausaha secara nyata.</h2>
-        <p>Project ini disusun sebagai tugas PKWU bidang Rekayasa Teknologi. Silakan sesuaikan data, foto, dan nama kelompok sesuai kondisi budidaya kalian sendiri.</p>
+        <span class="eyebrow" style="background:rgba(247,241,231,0.1);border-color:rgba(247,241,231,0.2);color:var(--terracotta-light)">
+          <span class="dot" style="background:var(--terracotta-light)"></span>
+          <span class="id">Penutup</span><span class="en">Closing</span>
+        </span>
+        <h2>
+          <span class="id">Dari kolam kecil, belajar berwirausaha secara nyata.</span>
+          <span class="en">From a small pond, learning real entrepreneurship.</span>
+        </h2>
+        <p>
+          <span class="id">Project ini disusun sebagai tugas PKWU bidang Rekayasa Teknologi. Silakan sesuaikan data, foto, dan nama kelompok sesuai kondisi budidaya kalian sendiri.</span>
+          <span class="en">This project was prepared as a PKWU assignment in Technology Engineering. Please adjust the data, photos, and group names according to your own cultivation condition.</span>
+        </p>
       </div>
-      <a href="#beranda" class="btn btn-primary" data-cursor>Kembali ke Atas</a>
+      <a href="#beranda" class="btn btn-primary" data-cursor>
+        <span class="id">Kembali ke Atas</span><span class="en">Back to Top</span>
+      </a>
     </div>
     <div class="footer__bottom">
       <div class="footer__brand">
         <svg viewBox="0 0 64 40" fill="none"><path d="M2 20c8-14 34-14 42 0-8 14-34 14-42 0Z" fill="currentColor"/><path d="M44 20 60 8v24L44 20Z" fill="currentColor"/></svg>
         Gurame Project
       </div>
-      <span>Tugas PKWU — Rekayasa Teknologi · Budidaya Ikan Gurame</span>
+      <span>
+        <span class="id">Tugas PKWU — Rekayasa Teknologi · Budidaya Ikan Gurame</span>
+        <span class="en">PKWU Assignment — Technology Engineering · Gourami Cultivation</span>
+      </span>
     </div>
   </div>
 </footer>
